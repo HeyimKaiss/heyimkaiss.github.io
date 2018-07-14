@@ -1,98 +1,140 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
+<!DOCTYPE html>
+<html>
+<title>Heyimkaiss - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./heyimkaiss.png");
+    min-height: 100%;
+}
+.bgimg-2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./dddd.jpg");
+    min-height: 30%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
 
-<video width="400" controls>
-  <source src="https://www2388.playercdn.net/186/2/vjIyLTotP7ECweM4ArxRYw/1531537545/180619/10OjCvSO8VFehgj.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card" id="myNavbar">
+<a href="#" class="w3-bar-item w3-button"><i class="fa fa-home w3-margin-right"></i>Home</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button">CREDITS</a>
+	  <a href="#team" class="w3-bar-item w3-button">MY WORKS</a>
+	  <a href="#team" class="w3-bar-item w3-button">YOUTUBE</a>
+	  <a href="#team" class="w3-bar-item w3-button">DOWNLOADS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-<p>
-^^^ You are watching "Ratatouile" (2007) 
-</p>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 
-<video width="400" controls>
-  <source src="https://www3580.playercdn.net/187/0/BK0Vn9T8VLN7MJMh-hh2bQ/1531538327/180618/SC2e5gv7pagr8h7.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">CREDITS</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">MY WORKS</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">YOUTUBE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">DOWNLOADS</a>
+</nav>
 
-<p>
-^^^ You are watching "The Bee Movie" (2007)
-</p>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white" style="padding:48px">
+ </div>
+</header>
 
-<video width="400" controls>
-  <source src="https://www921.playercdn.net/186/1/txAzzU4kMnw5SLHhZ_bnVw/1531540104/180619/lic85od0Sq2hmME.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">HK NETWORK</h3>
+  <p class="w3-center w3-large">Amazing Features about our network</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Fast Responces</p>
+      <p>You can report or give feedbacks to us and we would respond to you as fast as possible</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-film w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Videos</p>
+      <p>It is an awsome place to talk about your content!</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-terminal w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Programming</p>
+      <p>Its also a good place to talk about coding and talking about your bots!</p>
+    </div>
+	    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support Me</p>
+      <p>You can support me through patreon and subscribing to my channel, and you can join my discord server too!</p>
+    </div>
+  </div>
+</div>
 
-<p>^^^ You are watching "Wreck it Ralph" (2012)
-</p>
-
-<video width="400" controls>
-  <source src="https://www1434.playercdn.net/187/1/A4Q6rSKojeQPiD_OWOKMIw/1531537321/180618/2iWXsY3rIM20Dyw.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<p>
-^^^ You are watching "Cinderella" (1950)
-</p>
-  
-<video width="400" controls>
-  <source src="https://www3639.playercdn.net/185/0/tA_xJf7FDBOGNlv_gKlDpA/1531537112/180706/YMekVycssAPSBMx.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<p>
-^^^ You are watching "The Incredibles" (2002)
-</p>
-  
-  <video width="400" controls>
-  <source src="https://www3542.playercdn.net/186/1/_21lOPbkZskDzeDlvsBgXw/1531536946/180619/Hq56yoLsjxJpl6r.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<p>
-^^^ You are watching "Snow White And The Seven Dwarfs" (1937)
-</p>
-
-  <video width="400" controls>
-  <source src="https://www2426.playercdn.net/186/2/ySX3nnQyZQfEgJMV6sWGkA/1531537169/180619/uHkfX6qmbYTh86O.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<p>
-^^^ You are watching "Frozen" (2013)
-</p>
-
- <video width="400" controls>
-  <source src="https://www2449.playercdn.net/185/1/viI4cJuGTqNk5Qn7DfQZQw/1531579195/180619/ZUoao7lCe6v6c7E.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-
-<p>
-^^^ You are watching "The Little Mermaid" (1989)
-</p>
-  
-   <video width="400" controls>
-  <source src=" " type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
 
-<p>
-^^^ You are watching "Up" (2009)
-</p>
-     
-  <video width="400" controls>
-  <source src="https://www2656.playercdn.net/185/0/2ss456YW2v8WcT6BEtetJw/1531578826/180621/aJd5dIz8rHHHE20.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+
+<!-- Footer -->
+<footer class="bgimg-2 w3-center w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Join my discord server  <a href="https://discord.gg/pqEVpqt" title="here" target="_blank" class="w3-hover-text-green">here</a></p>
+</footer>
+ <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
 
-<p>
-^^^ You are watching "The Little Mermaid: Ariel's beggining" (2008)
- </p>
-
-  </body> 
+</body>
 </html>
